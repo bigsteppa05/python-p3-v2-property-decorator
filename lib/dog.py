@@ -36,4 +36,7 @@ class Dog:
         else:
             raise ValueError("Breed must be in list of approved breeds.")
 
+    def __repr__(self):
+        return f'Dog({self.name}, {self.breed})'
+
     breed = property(get_breed, set_breed)
